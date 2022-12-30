@@ -259,5 +259,6 @@ function clear (){
 
     divRes.innerHTML = 'Limpo! 🗑️'
     input.value = ''
+    rad[0].checked = 'true'
     input.focus()
 }
