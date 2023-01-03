@@ -231,22 +231,22 @@ function calc (){
 
         if(operation === 'minutesToHours' || operation === 'daysToWeeks') {
             val = `${val.split('.')[0]}`
-            msgParam3 = ' e meia '
+            msgParam3 = ' e meia'
         } else {
             val = `${val.split('.')[0]}`
-            msgParam3 = ' e meio '
+            msgParam3 = ' e meio'
         }
     }
 
 
-    // Esse precisa ser em média pois o número de dias em cada mês varia    
+    // Esse precisa ser em média pois o número de dias em cada mês varia   
     let extraMsg = ''
     if(operation === 'weeksToMonths'){
         extraMsg = 'em média '
     }
 
     // Declarando uma mensagem
-    res = `${num} ${msgParam1} ${extraMsg}${val} ${msgParam2}${msgParam3}`
+    res = `${num} ${msgParam1} ${extraMsg}${val} ${msgParam2}${msgParam3}` 
 
 
     // Retornando-a
@@ -259,6 +259,5 @@ function clear (){
 
     divRes.innerHTML = 'Limpo! 🗑️'
     input.value = ''
-    rad[0].checked = 'true'
     input.focus()
 }
